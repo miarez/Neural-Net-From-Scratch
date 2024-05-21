@@ -1,13 +1,16 @@
 
+const cs = console.log
 
-let brain
+let nn
 function setup(){
 
-    brain = new NeuralNetwork(3, 4, 2)
+    nn = new NeuralNetwork(2, 2, 1)
 
+    let inputs = [1, 0]
+    let output = nn.feed_forward(inputs)
+
+    cs(output)
 }
 
 
-function draw(){
-
-}
+// function draw(){}
